@@ -3,7 +3,7 @@ function getActivityIdea() {
         .then(res => res.json())
         .then(data => {
             document.getElementById("idea").textContent = data.activity
-            document.body.classList.add("fun")
+            document.getElementById("activity-container").classList.add("fun")
             document.getElementById("title").textContent = "🦾 HappyBot🦿"
         })
 }
